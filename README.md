@@ -1,6 +1,31 @@
-# algorithms hacktoberfest
+## Implemented Algorithms
+
+### A* Algorithm in Python
+
+Added implementation of the A* algorithm for optimal path finding in weighted graphs.
+
+### Usage:
+
+```python
+from astar import astar
+
+def heuristic(node):
+return 0 # Replace with a real heuristic
+
+graph = {
+'A': {'B': 1, 'C': 4},
+'B': {'A': 1, 'C': 2, 'D': 5},
+'C': {'A': 4, 'B': 2, 'D': 1},
+'D': {'B': 5, 'C': 1}
+}
+
+start, goal = 'A', 'D'
+path = astar(graph, start, goal, heuristic)
+print("Path:", path)
 
 <div align=center>
+
+# algorithms hacktoberfest
 
 # Hacktoberfest <!-- current year -->2022<!-- current year -->
 
